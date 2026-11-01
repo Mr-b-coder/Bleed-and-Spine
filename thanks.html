@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thanks | Bleed &amp; Spine</title>
+  <meta name="description" content="Your file check request has been received. Bleed &amp; Spine will reply by email within 48 hours.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#16161A">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute('content', '#101014');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="hero" style="min-height:100vh;display:grid;place-items:center;text-align:center">
+    <div class="wrap narrow">
+      <img src="assets/mark-light.svg" alt="" width="120" height="115" style="margin:0 auto 32px">
+      <h1 style="font-size:clamp(2.4rem,6vw,4rem)">Thanks, we’ve got it.</h1>
+      <p class="lede" style="margin-inline:auto">We’ll check your files and reply by email within 48 hours.</p>
+      <div class="hero-actions" style="justify-content:center"><a href="/" class="btn">Back to the site</a></div>
+    </div>
+    <span class="crop crop-tl"></span><span class="crop crop-tr"></span><span class="crop crop-bl"></span><span class="crop crop-br"></span>
+  </main>
+</body>
+</html>
